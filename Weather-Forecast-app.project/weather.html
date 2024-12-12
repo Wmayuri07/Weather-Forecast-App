@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, intial-sclae=1.0">
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body>
+<div class="header">
+    <h1>WEATHER APP</h1>
+    </div>
+    <input type="text" id="input" placeholder="Enter city name...">
+    <button id="search" onclick="fetchWeather()">search</button>
+    <div>
+
+    </div>
+    <main>
+        <div class="weather">
+            <h2 id="city">Delhi,IN</h2>
+            <div class="temp-box">
+                <img src="weather-icon.png" alt="" id="img">
+             <p id="date"><b>Wed , 4 January </b></p>
+            <p id="time"><b> 8:30 </b></p>
+             </div>
+            <span id="clouds"><b>Broken clouds </b></span>
+            <p id="temprature"><b>11 °C </b></p>
+            <span id="Humidity"><b>humidity </b></span>
+            <p id="humidity"><b>87% </b></p>
+            <span id="Wind"><b>wind </b> </span>
+            <p id="wind"> <b>3km/h </b></p>
+        </div>
+        <div class="divider1"></div>
+        <div class="forecastH">
+            <p class="cast.header"><b>Upcoming forecast </b></p>
+            <div class="templist">
+            <div class="next">
+            <div>
+            <p class="time"><b>8:00 PM </b></p>
+            <p><b>11 °C</b></p>
+            </div>
+            <p class="desc"><b>Fog </b></p>
+            </div>
+            <div class="next">
+            <div>
+            <p class="time"><b>9:00 PM </b></p>
+            <p><b>10 °C</b></p>
+            </div>
+            <p class="desc"><b>Fog</b></p>
+            </div>
+            <div class="next">
+            <div>
+            <p class="time"><b>10:00 PM </b></p>
+            <p><b>9 °C </b></p>
+            </div>
+            <p class="desc"><b>Fog </b></p>
+        </div>
+        <div class="next">
+        <div>
+        <p class="time"><b>11:00 PM </b></p>
+        <p><b>8 °C</b></p>
+        </div>
+        <p class="desc"> <b>Fog</b></p>
+        </div>
+        <div class="next">
+        <div>
+        <p class="time"><b>12:00 PM </b></p>
+        <p><b>8 °C </b></p>
+        </div>
+        <p class="desc"><b>Fog </b></p>
+    </div>
+    </div>
+</div>
+    </main>
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header"><b>Next 7 Days forecast </b></p>
+        <div class="templist">
+
+        <div class="weekF">
+        <div class="dayF">
+            <p class="date"><b>wed Jan 04 2023 </b></p>
+            <p class="desc"><b>Broken clouds</b></p>
+            <p> <b>16 °C / 7 °C </b></p>
+            <p class="desc"><b>humidity </b></p>
+            <p><b>73% </b></p>
+            <p class="desc"><b>wind </b></p>
+            <p><b>9 km/h</b></p>
+        </div>
+
+     
+        <div class="dayF">
+            <p class="date"><b>Thu Jan 05 2023 </b></p>
+            <p class="desc"><b>Broken clouds </b></p>
+            <p><b>17 °C / 5 °C </b></p>
+            <p class="desc"><b>humidity </b></p>
+            <p><b>63% </b></p>
+            <p class="desc"><b>wind </b></p>
+            <p><b>9 km/h </b></p>
+        </div>
+
+        
+            <div class="dayF"><b>
+                <p class="date">Fri Jan 06 2023</p>
+                <p class="desc">Broken clouds</p>
+                <p>17 °C / 5 °C</p>
+                 <p class="desc">humidity</p>
+                  <p>59%</p>
+                  <p class="desc">wind</p>
+                  <p>9 km/h</p></b>
+            </div>
+            
+                <div class="dayF"><b>
+                    <p class="date">Sat Jan 07 2023</p>
+                    <p class="desc">Broken clouds</p>
+                     <p>17 °C / 5 °C</p>
+                     <p class="desc">humidity</p>
+                     <p>56%</p>
+                     <p class="desc">wind</p>
+                     <p>10 km/h</p></b>
+                </div>
+                         
+                <div class="dayF"><b>
+                <p class="date">Sun Jan 08 2023</p>
+                <p class="desc">Broken clouds</p>
+                <p>18 °C / 5 °C</p>
+                <p class="desc">humidity</p>
+                <p>51%</p>
+                <p class="desc">wind</p>
+                <p>11 km/h</p></b>
+            </div> 
+
+            <div class="dayF"><b>
+            <p class="date">Mon Jan 09 2023</p>
+            <p class="desc">Broken clouds</p>
+            <p>21 °C / 6 °C</p>
+            <p class="desc">humidity</p>
+            <p>51%</p>
+            <p class="desc">wind</p>
+            <p>10 km/h</p></b>
+            </div>
+
+            <div class="dayF"><b>
+            <p class="date">Tue Jan 10 2023</p>
+            <p class="desc">Broken clouds</p>
+            <p>23 °C / 10 °C</p>
+            <p class="desc">humidity</p>
+            <p>59%</p>
+            <p class="desc">wind</p>
+            <p>13 km/h</p></b>
+            </div>
+        
+        </div>
+    </div>
+<script src="/weather.js" type="module"></script>
+    </body>
+    </html>
